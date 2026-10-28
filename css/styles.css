@@ -1,0 +1,133 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&family=Inter:wght@400;500&display=swap');
+
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #ffffff; /* Blanco puro */
+    color: #111111; /* Negro casi puro */
+    margin: 0;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    font-style: italic; /* Da sensación de movimiento */
+    letter-spacing: -2px;
+    margin: 0;
+    line-height: 1;
+}
+
+h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #757575; /* Gris deportivo */
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+
+.descripcion {
+    max-width: 650px;
+    text-align: left;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333333;
+    background-color: #f7f7f7;
+    padding: 30px;
+    
+    margin-bottom: 40px;
+}
+
+
+h5 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: 500;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: #555;
+    margin-right: 15px;
+}
+
+input[type="number"], select {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    padding: 12px 15px;
+    border: 1px solid #d1d1d1;
+    background-color: #fff;
+    border-radius: 0; /* Bordes rectos y afilados */
+    margin-bottom: 25px;
+    width: 250px;
+    max-width: 100%;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input[type="number"]:focus, select:focus {
+    border-color: #111111; /* Contraste al enfocar */
+}
+
+
+#estado {
+    background-color: #111;
+    color: #fff;
+    padding: 3px 10px;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
+
+
+button#mostrar {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    background-color: #111111;
+    color: #ffffff;
+    padding: 18px 40px;
+    border: 2px solid #111111;
+    border-radius: 30px; /* Forma de píldora común en ropa deportiva */
+    cursor: pointer;
+    margin-top: 30px;
+    transition: all 0.3s ease;
+}
+
+button#mostrar:hover {
+    background-color: #ffffff;
+    color: #111111;
+}
+
+button#mostrar:active {
+    transform: scale(0.97);
+}
+
+/* Imágenes */
+img {
+    border-radius: 0;
+    margin-top: 30px !important;
+    max-width: 100%;
+    filter: grayscale(20%); /* Un toque más sobrio */
+    transition: filter 0.4s ease;
+}
+
+img:hover {
+    filter: grayscale(0%); /* Vuelve el color al pasar el mouse */
+}
